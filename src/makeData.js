@@ -2,7 +2,7 @@ export default function makeData() {
   return {
     results: [
       {
-        votes: 2,
+        votes: 4,
         userAdded: "Damian Ospara",
         description: "brak opisu dla tematu",
         tags: ["OOP", "Java"],
@@ -13,15 +13,25 @@ export default function makeData() {
           {
             _id: "5f3ed97265663e05782233c8",
             id: "oauth2|Discord|627055597803798548",
-            vote: "up",
+            vote: "down"
+          },
+          {
+            _id: "5f3ed97265663e05782233c8",
+            id: "oauth2|Discord|627055597803798548",
+            vote: "down"
+          },
+          {
+            _id: "5f3ed97265663e05782233c8",
+            id: "oauth2|Discord|627055597803798548",
+            vote: "down"
           },
           {
             _id: "5f5fc59165663e05782233d8",
             id: "oauth2|Discord|472857527818780672",
-            vote: "up",
-          },
+            vote: "up"
+          }
         ],
-        __v: 16,
+        __v: 16
       },
       {
         votes: 4,
@@ -35,25 +45,25 @@ export default function makeData() {
           {
             _id: "5ed384a1090c22173fe0c9f8",
             id: "oauth2|Discord|627055597803798548",
-            vote: "up",
+            vote: "up"
           },
           {
             _id: "5ed49bc64b003718049b2f73",
             id: "oauth2|Discord|417461129124511757",
-            vote: "up",
+            vote: "up"
           },
           {
             _id: "5f0c857c48bc46121c3e6568",
             id: "oauth2|Discord|627057161993977856",
-            vote: "up",
+            vote: "up"
           },
           {
             _id: "5f5fc58b65663e05782233d7",
             id: "oauth2|Discord|472857527818780672",
-            vote: "up",
-          },
+            vote: "up"
+          }
         ],
-        __v: 14,
+        __v: 14
       },
       {
         votes: 2,
@@ -67,15 +77,15 @@ export default function makeData() {
           {
             _id: "5ed384a1090c22173fe0c9f9",
             id: "oauth2|Discord|627055597803798548",
-            vote: "up",
+            vote: "up"
           },
           {
             _id: "5ed49bc74b003718049b2f74",
             id: "oauth2|Discord|417461129124511757",
-            vote: "up",
-          },
+            vote: "up"
+          }
         ],
-        __v: 8,
+        __v: 8
       },
       {
         votes: 2,
@@ -89,15 +99,15 @@ export default function makeData() {
           {
             _id: "5f31a06148bc46121c3e658c",
             id: "oauth2|Discord|525296572649701377",
-            vote: "up",
+            vote: "up"
           },
           {
             _id: "5f359c4165663e05782233bf",
             id: "oauth2|Discord|627055597803798548",
-            vote: "up",
-          },
+            vote: "up"
+          }
         ],
-        __v: 12,
+        __v: 12
       },
       {
         votes: 2,
@@ -112,14 +122,14 @@ export default function makeData() {
           {
             _id: "5ed49bb84b003718049b2f71",
             id: "oauth2|Discord|417461129124511757",
-            vote: "up",
+            vote: "up"
           },
           {
             _id: "5f31a06048bc46121c3e658b",
             id: "oauth2|Discord|525296572649701377",
-            vote: "up",
-          },
-        ],
+            vote: "up"
+          }
+        ]
       },
       {
         votes: 2,
@@ -133,15 +143,15 @@ export default function makeData() {
           {
             _id: "5f15f0ed48bc46121c3e656e",
             id: "oauth2|Discord|472857527818780672",
-            vote: "up",
+            vote: "up"
           },
           {
             _id: "5f31a06048bc46121c3e658a",
             id: "oauth2|Discord|525296572649701377",
-            vote: "up",
-          },
+            vote: "up"
+          }
         ],
-        __v: 3,
+        __v: 3
       },
       {
         votes: 0,
@@ -152,7 +162,7 @@ export default function makeData() {
         topic: "Angular SW-API",
         addedDate: "2020-08-13T20:16:44.769Z",
         usersVote: [],
-        __v: 3,
+        __v: 3
       },
       {
         votes: 1,
@@ -168,10 +178,10 @@ export default function makeData() {
           {
             _id: "5f15f0f148bc46121c3e656f",
             id: "oauth2|Discord|472857527818780672",
-            vote: "up",
-          },
+            vote: "up"
+          }
         ],
-        __v: 1,
+        __v: 1
       },
       {
         votes: 1,
@@ -186,10 +196,10 @@ export default function makeData() {
           {
             _id: "5f15f0f448bc46121c3e6570",
             id: "oauth2|Discord|472857527818780672",
-            vote: "up",
-          },
+            vote: "up"
+          }
         ],
-        __v: 2,
+        __v: 2
       },
       {
         votes: 2,
@@ -203,15 +213,15 @@ export default function makeData() {
           {
             _id: "5f15f0f548bc46121c3e6571",
             id: "oauth2|Discord|472857527818780672",
-            vote: "up",
+            vote: "up"
           },
           {
             _id: "5f2ba28948bc46121c3e6584",
             id: "oauth2|Discord|627055597803798548",
-            vote: "up",
-          },
+            vote: "up"
+          }
         ],
-        __v: 2,
+        __v: 2
       },
       {
         votes: 1,
@@ -226,10 +236,10 @@ export default function makeData() {
           {
             _id: "5efec64939e94b001ea15722",
             id: "oauth2|Discord|627055597803798548",
-            vote: "up",
-          },
+            vote: "up"
+          }
         ],
-        __v: 13,
+        __v: 13
       },
       {
         votes: 1,
@@ -244,10 +254,10 @@ export default function makeData() {
           {
             _id: "5f3a457765663e05782233c3",
             id: "oauth2|Discord|235201695179735040",
-            vote: "up",
-          },
+            vote: "up"
+          }
         ],
-        __v: 3,
+        __v: 3
       },
       {
         votes: 0,
@@ -258,7 +268,7 @@ export default function makeData() {
         topic: "SHOT\nRedux w aplikacji React'owej",
         addedDate: "2020-08-13T20:13:09.148Z",
         usersVote: [],
-        __v: 1,
+        __v: 1
       },
       {
         votes: 1,
@@ -273,10 +283,10 @@ export default function makeData() {
           {
             _id: "5f15f0fd48bc46121c3e6573",
             id: "oauth2|Discord|472857527818780672",
-            vote: "up",
-          },
+            vote: "up"
+          }
         ],
-        __v: 1,
+        __v: 1
       },
       {
         votes: 0,
@@ -287,7 +297,7 @@ export default function makeData() {
         topic: "Luźno o Infrastrukturze (DNS - CloudFlare)",
         addedDate: "2020-07-20T19:30:14.220Z",
         usersVote: [],
-        __v: 0,
+        __v: 0
       },
       {
         votes: 0,
@@ -299,7 +309,7 @@ export default function makeData() {
         topic: "Continous Delivery z buddym i circleCI",
         addedDate: "2020-07-23T19:29:53.746Z",
         usersVote: [],
-        __v: 0,
+        __v: 0
       },
       {
         votes: 0,
@@ -311,7 +321,7 @@ export default function makeData() {
         topic: "Coding Tree - Co to?",
         addedDate: "2020-07-27T18:57:20.976Z",
         usersVote: [],
-        __v: 0,
+        __v: 0
       },
       {
         votes: 0,
@@ -323,7 +333,7 @@ export default function makeData() {
         topic: "No Code",
         addedDate: "2020-07-30T19:16:03.275Z",
         usersVote: [],
-        __v: 0,
+        __v: 0
       },
       {
         votes: 0,
@@ -334,7 +344,7 @@ export default function makeData() {
         topic: "Podstawy Flexbox",
         addedDate: "2020-08-13T20:14:38.523Z",
         usersVote: [],
-        __v: 1,
+        __v: 1
       },
       {
         votes: 0,
@@ -345,7 +355,7 @@ export default function makeData() {
         topic: "Angular - formularze, eventy",
         addedDate: "2020-08-13T20:15:39.456Z",
         usersVote: [],
-        __v: 1,
+        __v: 1
       },
       {
         votes: 0,
@@ -357,7 +367,7 @@ export default function makeData() {
         topic: "Dlaczego Typescript?",
         addedDate: "2020-08-10T19:29:34.021Z",
         usersVote: [],
-        __v: 0,
+        __v: 0
       },
       {
         votes: 0,
@@ -368,7 +378,7 @@ export default function makeData() {
         topic: "React - Formularze",
         addedDate: "2020-08-13T20:44:00.569Z",
         usersVote: [],
-        __v: 1,
+        __v: 1
       },
       {
         votes: 0,
@@ -379,7 +389,7 @@ export default function makeData() {
         topic: "Loadable Components SSR",
         addedDate: "2020-08-14T09:57:36.163Z",
         usersVote: [],
-        __v: 0,
+        __v: 0
       },
       {
         votes: 0,
@@ -390,7 +400,7 @@ export default function makeData() {
         topic: "Typescript QA",
         addedDate: "2020-08-17T21:25:57.042Z",
         usersVote: [],
-        __v: 0,
+        __v: 0
       },
       {
         votes: 0,
@@ -402,7 +412,7 @@ export default function makeData() {
         topic: "Coding Tree - Projekty",
         addedDate: "2020-08-20T19:28:16.016Z",
         usersVote: [],
-        __v: 0,
+        __v: 0
       },
       {
         votes: 3,
@@ -417,20 +427,20 @@ export default function makeData() {
           {
             _id: "5f477fc365663e05782233cb",
             id: "oauth2|Discord|235201695179735040",
-            vote: "up",
+            vote: "up"
           },
           {
             _id: "5f47825065663e05782233cc",
             id: "oauth2|Discord|627057161993977856",
-            vote: "up",
+            vote: "up"
           },
           {
             _id: "5f50a4e165663e05782233cf",
             id: "oauth2|Discord|627055597803798548",
-            vote: "up",
-          },
+            vote: "up"
+          }
         ],
-        __v: 3,
+        __v: 3
       },
       {
         votes: 0,
@@ -441,7 +451,7 @@ export default function makeData() {
         topic: "Coding Tree Autumn Offensive",
         addedDate: "2020-08-31T11:09:35.291Z",
         usersVote: [],
-        __v: 0,
+        __v: 0
       },
       {
         votes: 0,
@@ -454,7 +464,7 @@ export default function makeData() {
           "Kodowanie, Programowanie, Automatyzacja - czym zajmuje się programista",
         addedDate: "2020-09-03T08:10:13.405Z",
         usersVote: [],
-        __v: 0,
+        __v: 0
       },
       {
         votes: 0,
@@ -466,7 +476,7 @@ export default function makeData() {
         topic: "Vanilla Javascript - Live Code Review",
         addedDate: "2020-09-07T18:28:21.458Z",
         usersVote: [],
-        __v: 0,
+        __v: 0
       },
       {
         votes: 0,
@@ -478,8 +488,8 @@ export default function makeData() {
         topic: "Programowanie Obiektowe - Wzorce Projektowe",
         addedDate: "2020-09-10T19:23:09.963Z",
         usersVote: [],
-        __v: 0,
-      },
-    ],
+        __v: 0
+      }
+    ]
   };
 }
