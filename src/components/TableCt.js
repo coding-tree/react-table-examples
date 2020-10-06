@@ -1,6 +1,12 @@
-import React, { forwardRef, useEffect, useMemo, useRef, useState } from "react";
+import React, { forwardRef, useEffect, useMemo, useRef } from "react";
 import styled, { css } from "styled-components";
-import { useTable, useRowSelect, useSortBy } from "react-table";
+import {
+  useTable,
+  useRowSelect,
+  useSortBy,
+  useExpanded,
+  usePagination
+} from "react-table";
 import makeData from "../makeData";
 
 const IndeterminateCheckbox = forwardRef(
@@ -106,20 +112,30 @@ function Table({ columns, data }) {
   const {
     getTableProps,
     getTableBodyProps,
-    headerGroups,
-    rows,
-    prepareRow,
     selectedFlatRows,
+    headerGroups,
+    prepareRow,
+    page,
+    canPreviousPage,
+    canNextPage,
+    pageOptions,
+    pageCount,
+    gotoPage,
+    nextPage,
+    previousPage,
+    setPageSize,
 
-    state: { selectedRowIds }
+    state: { selectedRowIds, pageIndex, pageSize }
   } = useTable(
     {
       columns,
-      data
+      data,
+      initialState: { pageIndex: 0 }
     },
     useSortBy,
+    useExpanded,
+    usePagination,
     useRowSelect,
-
     hooks => {
       hooks.visibleColumns.push(columns => [
         // Let's make a column for selection
@@ -159,6 +175,7 @@ function Table({ columns, data }) {
       ]);
     }
   );
+
   // Render the UI for your table
   return (
     <>
@@ -180,12 +197,21 @@ function Table({ columns, data }) {
           ))}
         </StyledTableHead>
         <tbody {...getTableBodyProps()}>
-          {rows.slice(0, 10).map((row, i) => {
+          {page.map((row, i) => {
             prepareRow(row);
             return <TableRow key={i} row={row} />;
           })}
         </tbody>
       </StyledTable>
+
+      {/* Pagination */}
+      <div>
+        {pageOptions.map(el => (
+          <button onClick={() => gotoPage(el)}>{el + 1}</button>
+        ))}
+      </div>
+
+      {/* Selected rows */}
       <p>Selected Rows: {Object.keys(selectedRowIds).length}</p>
       <pre>
         <code>
@@ -223,30 +249,26 @@ const TableHead = ({ column }) => {
           ) : (
             <StyledIcon className="fas fa-sort"></StyledIcon>
           )
-        ) : (
-          <></>
-        )}
+        ) : null}
       </>
     </StyledTh>
   );
 };
 
 const TableRow = ({ row }) => {
-  const [isVisible, setVisibility] = useState(false);
-
-  const handleClick = () => {
-    setVisibility(prev => !prev);
-  };
   return (
     <>
-      <StyledTableRow {...row.getRowProps()} onClick={handleClick}>
+      <StyledTableRow
+        {...row.getRowProps()}
+        {...row.getToggleRowExpandedProps()}
+      >
         {row.cells.map(cell => {
           return (
             <StyledTd {...cell.getCellProps()}>{cell.render("Cell")}</StyledTd>
           );
         })}
       </StyledTableRow>
-      {isVisible && (
+      {row.isExpanded ? (
         <StyledDetails>
           <StyledDetailsColumn colSpan={row.cells.length}>
             <StyledDetailsContainer>
@@ -257,7 +279,7 @@ const TableRow = ({ row }) => {
             </StyledDetailsContainer>
           </StyledDetailsColumn>
         </StyledDetails>
-      )}
+      ) : null}
     </>
   );
 };
@@ -310,7 +332,16 @@ function TableCt() {
         accessor: row => <UserVote row={row} />,
         sort: true,
         align: "right",
-        width: "8%"
+        width: "8%",
+        sortType: (a, b, name, desc) => {
+          if (a.original.votes === b.original.votes) {
+            return 0;
+          }
+          if (a.original.votes > b.original.votes) {
+            return 1;
+          }
+          return -1;
+        }
       },
       {
         Header: "Inicjator",

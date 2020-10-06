@@ -9,6 +9,7 @@ export default function makeData() {
         _id: "5ed37bd1090c22173fe0c9f1",
         topic: "Programowanie Obiektowe - Polimorfizm",
         addedDate: "2020-05-31T09:40:10.389Z",
+        score: -2,
         usersVote: [
           {
             _id: "5f3ed97265663e05782233c8",
@@ -41,6 +42,7 @@ export default function makeData() {
         _id: "5ed38172090c22173fe0c9f3",
         topic: "Machine Learning nie gryzie - podstawy/koncepcje",
         addedDate: "2020-05-31T10:04:16.770Z",
+        score: 4,
         usersVote: [
           {
             _id: "5ed384a1090c22173fe0c9f8",
